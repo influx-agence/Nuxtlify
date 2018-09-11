@@ -36,7 +36,7 @@ module.exports = {
     ]
   },
   build: {
-    vendor: ["jquery", "d3", "owl.carousel", "axios"],
+    vendor: ["jquery", "d3", "owl.carousel"],
     plugins: [
       new webpack.ProvidePlugin({
           jQuery: 'jquery',

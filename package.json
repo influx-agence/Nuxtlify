@@ -1,15 +1,9 @@
 {
   "name": "influx-agence",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "website",
   "author": "Eddy BOHLER - Baptiste ROCACHER - Yoann BOHLER",
   "private": false,
-  "config": {
-    "nuxt": {
-      "host": "192.168.0.36",
-      "port": "3333"
-    }
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -20,7 +14,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
-    "axios": "^0.18.0",
     "d3": "^5.6.0",
     "jquery": "^3.3.1",
     "nuxt": "^1.0.0",
