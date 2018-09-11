@@ -1,0 +1,42 @@
+/* PAGE TRANS */
+.page-enter-active, .page-leave-active {
+  transition: all 10s ease;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+  filter:blur(100px);
+}
+.delay01s{animation-delay: 0.1s;}
+.delay02s{animation-delay: 0.2s;}
+.delay03s{animation-delay: 0.3s;}
+.delay04s{animation-delay: 0.4s;}
+.delay05s{animation-delay: 0.5s;}
+.delay1s{animation-delay: 1s;}
+.delay2s{animation-delay: 2s;}
+.delay3s{animation-delay: 3s;}
+
+/* KEYFRAMES */
+@-webkit-keyframes electricity {
+  0% {
+    stroke-dasharray: 150 100;
+    stroke-dashoffset: -475;
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+}
+@keyframes electricity {
+  0% {
+    stroke-dasharray: 150 100;
+    stroke-dashoffset: -475;
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+}

@@ -1,0 +1,42 @@
+<svg id="logo" viewBox="196 275 230 256" enable-background="new 196 275 230 256" xml:space="preserve" width="230" height="256" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        /* <![CDATA[ */
+        .empreinte-blanc{
+          fill:none;
+          stroke:#FFFFFF;
+          stroke-width:3;
+          stroke-linecap:round;
+          stroke-miterlimit:10;
+        }
+        .empreinte-orange{
+          fill:none;
+          stroke:#FF5722;
+          stroke-width:3;
+          stroke-linecap:round;
+          stroke-miterlimit:10;
+        }
+        .empreinte-noir{
+          fill:none;
+          stroke:#242424;
+          stroke-width:3;
+          stroke-linecap:round;
+          stroke-miterlimit:10;
+        }
+        /* ]]> */
+    </style>
+    <g class="logo-empreinte">
+        <path d="M269.355,292.949 c59.217-10.847,85.882,3.015,109.673,13.759" class="empreinte-blanc"></path>
+        <path d="M239.331,319.011 c98.522-34.033,147.488,13.273,163.003,28.799" class="empreinte-orange"></path>
+        <path d="M224.891,346.354 c118.503-64.149,182.395,30.948,186.932,42.35" class="empreinte-blanc"></path>
+        <path d="M208.823,384.095 c119.715-99.048,188.109,5.198,199.641,40.998" class="empreinte-orange"></path>
+        <path d="M214.917,415.702 c51.772-74.165,109.465-56.663,131.974-42.385c38.785,24.571,45.607,59.852,47.062,84.977" class="empreinte-blanc"></path>
+        <path d="M333.871,386.521 c1.281,0.589,2.32,1.282,3.705,1.975c14.891,9.011,25.626,22.527,31.167,38.469c0.693,2.079,1.039,3.812,1.385,5.892	c5.541,22.527,4.848,44.707,1.177,66.783" class="empreinte-orange"></path>
+        <path d="M226.83,450.219	c3.082-12.857,7.238-25.334,13.817-37.117c0.346-0.347,0.693-0.693,1.039-1.04c11.082-19.754,31.859-32.924,54.334-33.721" class="empreinte-orange"></path>
+        <path d="M336.641,411.543 c25.903,25.819,18.977,65.674,11.22,98.043" class="empreinte-blanc"></path>
+        <path d="M238.466,476.593 c3.671-12.026,5.472-24.502,9.108-36.528c1.731-5.753,3.879-11.471,6.995-16.635c3.047-5.094,7.03-9.669,11.462-13.62 c4.952-4.436,10.701-8.318,17.073-10.397" class="empreinte-blanc"></path>
+        <path d="M324.382,425.648 c7.584,8.11,9.939,19.65,10.597,30.394c0.796,12.719-1.004,25.576-4.121,37.914c-1.662,6.585-3.705,13.065-6.441,19.269" class="empreinte-orange"></path>
+        <path d="M251.175,491.391 c5.368-13.481,7.792-27.344,10.216-42.246c1.039-6.238,3.463-11.437,6.926-16.635c5.194-6.931,11.774-12.823,19.947-15.041" class="empreinte-orange"></path>
+        <path d="M268.109,504.838 c3.636-9.392,7.099-22.908,9.246-32.785c1.939-8.872,1.801-18.992,5.333-27.379c4.017-9.6,11.462-13.308,20.986-10.12 c10.735,3.604,12.986,10.189,14.198,20.794c2.32,20.205-8.138,49.351-13.506,61.688" class="empreinte-blanc"></path>
+        <path d="M285.528,512.358 c16.38-36.805,14.129-64.218,14.129-64.218" class="empreinte-orange"></path>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /test/
+Disallow: /v1/
+Disallow: /v2/
+Disallow: /forge/
