@@ -1,6 +1,6 @@
 backend:
   name: github
-  repro: influx-agence/appInflux
+  repro: influx-agence/Nuxtlify
   branch: master
 media_folder: "static/uploads"
 collections: # A list of collections the CMS should be able to edit
