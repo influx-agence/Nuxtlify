@@ -1,3 +1,4 @@
+const webpack = require("webpack")
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
   nuxtent: {
