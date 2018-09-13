@@ -1,16 +1,13 @@
-var dynamicRoutes = getDynamicPaths({
-  '/blog': 'blog/posts/*.json'
-});
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
-  generate: {
-    routes: dynamicRoutes
-  },
   nuxtent: {
     content: {
         page: "/_post",
         permalink: ":year/:slug",
-        generate: ["get", "getAll"]
+        generate: [
+          "get", 
+          "getAll"
+        ]
     }
   },
   loading: false,
