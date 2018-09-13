@@ -1,7 +1,11 @@
-const webpack = require("webpack")
+var dynamicRoutes = getDynamicPaths({
+  '/blog': 'blog/posts/*.json'
+});
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
-  mode: "spa",
+  generate: {
+    routes: dynamicRoutes
+  },
   nuxtent: {
     content: {
         page: "/_post",
