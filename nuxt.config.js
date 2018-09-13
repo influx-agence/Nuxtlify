@@ -1,6 +1,7 @@
 const webpack = require("webpack")
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
+  mode: "spa",
   nuxtent: {
     content: {
         page: "/_post",
