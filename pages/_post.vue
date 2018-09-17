@@ -7,7 +7,7 @@
 
 <script>
     export default {
-      async asyncData ({ app, params }) {
+      async asyncData ({ app, route }) {
         return {
           post: await app.$content('/').get(route.path)
         }
