@@ -9,7 +9,7 @@
     export default {
       async asyncData ({ app, params }) {
         return {
-          post: await app.$content('/').get(params.slug)
+          post: await app.$content('/').get(route.path)
         }
       }
     }
