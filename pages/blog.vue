@@ -1,10 +1,10 @@
 <template>
-    <div id="page-accueil" class="influx-router">
+    <div id="page-blog" class="influx-router">
         <header class="influx-intro">
           <svg class="decoration-poleBot intro-deco"></svg>
           <div class="vertical-center">
               <h3 class="bloc-title">BLOG</h3>
-              <h2><b>Découvrez</b> nous et notre travails quotidiens</h2>          
+              <h2><b>Découvrez</b> nous et notre travails quotidiens</h2>
           </div>
           <svg class="decoration-poleBot intro-deco-bot"></svg>
         </header>
@@ -49,12 +49,13 @@
 </script>
 <style scoped>
     header.influx-intro {
-        min-height: 100vh;
+        min-height: 30vh;
         padding: 50px 10%;
         position: relative;
         vertical-align: middle;
         display: table-cell;
-        height: 100vh;
+        height: 30vh;
+        width:100vw;
         background:url(~/assets/img/background/influx-accueil-top.jpg) no-repeat fixed center center / cover;
     }
 </style>
