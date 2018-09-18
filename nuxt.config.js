@@ -6,6 +6,7 @@ module.exports = {
     content: {
         page: "/_post",
         permalink: ":year/:slug",
+        isPost: false,
         generate: [
           "get",
           "getAll"
