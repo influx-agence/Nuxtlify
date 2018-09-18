@@ -7,15 +7,13 @@ module.exports = {
         page: "/_post",
         permalink: ":year/:slug",
         generate: [
-          "get", 
+          "get",
           "getAll"
         ]
     }
   },
-  api: function(isStatic) {
-    return {
-      browserBaseURL: isStatic ? 'https://influx-agence.netlify.com' : ''
-    }
+  api: {
+    baseURL: ''
   },
   loading: false,
   plugins: [
