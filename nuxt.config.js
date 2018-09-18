@@ -12,6 +12,11 @@ module.exports = {
         ]
     }
   },
+  api: function(isStatic) {
+    return {
+      browserBaseURL: isStatic ? 'https://influx-agence.netlify.com' : ''
+    }
+  },
   loading: false,
   plugins: [
       {src: '~plugins/ga.js', ssr: false}
