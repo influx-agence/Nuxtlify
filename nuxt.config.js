@@ -1,15 +1,18 @@
 const webpack = require("webpack")
+const glob = require('glob');
+const path = require('path');
+
+// Enhance Nuxt's generate process by gathering all content files from Netifly CMS
+// automatically and match it to the path of your Nuxt routes.
+// The Nuxt routes are generate by Nuxt automatically based on the pages folder.
+const dynamicRoutes = getDynamicPaths({
+  '/blog': 'blog/posts/*.json'
+});
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
-  mode: "spa",
+  mode: "universal",
   generate: {
-    routes: [
-      // You shouldn't need to include any content routes inside generate.routes
-      // as nuxtent handles this for you:
-      // https://github.com/nuxt-community/nuxtent-module/issues/104
-      "/",
-      "/blog"
-    ]
+    routes: dynamicRoutes
   },
   loading: false,
   plugins: [
@@ -58,4 +61,18 @@ module.exports = {
       }
     }
   }
+}
+/**
+ * Create an array of URLs from a list of files
+ * @param {*} urlFilepathTable
+ */
+function getDynamicPaths(urlFilepathTable) {
+  return [].concat(
+    ...Object.keys(urlFilepathTable).map(url => {
+      var filepathGlob = urlFilepathTable[url];
+      return glob
+        .sync(filepathGlob, { cwd: 'content' })
+        .map(filepath => `${url}/${path.basename(filepath, '.json')}`);
+    })
+  );
 }
