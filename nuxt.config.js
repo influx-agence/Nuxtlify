@@ -1,10 +1,7 @@
 const webpack = require("webpack")
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
-  mode: "universal",
-  generate: {
-    routes: dynamicRoutes
-  },
+  mode: "spa",
   loading: false,
   plugins: [
       {src: '~plugins/ga.js', ssr: false}
