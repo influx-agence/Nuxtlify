@@ -13,9 +13,9 @@
         };
       },
       async asyncData({ app, route, params }) {
-        const post = import("~/content/posts/" + params.slug + ".json");
+        
         const page = await app.$content("/posts").get(route.path);
-
+        const post = import("~/content/posts/" + page.title + ".json");
         return {
           post,
           page
