@@ -18,6 +18,15 @@ module.exports = {
       browserBaseURL: isStatic ? 'https://influx-agence.netlify.com' : ''
     }
   },
+  generate: {
+    routes: [
+      // You shouldn't need to include any content routes inside generate.routes
+      // as nuxtent handles this for you:
+      // https://github.com/nuxt-community/nuxtent-module/issues/104
+      "/",
+      "/blog"
+    ]
+  },
   loading: false,
   plugins: [
       {src: '~plugins/ga.js', ssr: false}
