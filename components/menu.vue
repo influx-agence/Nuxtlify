@@ -20,7 +20,7 @@
           <div class="sous-menu" data-target="influx">
               <nuxt-link to="/valeurs">Valeurs</nuxt-link>
               <nuxt-link to="/equipe">Équipe</nuxt-link>
-              <nuxt-link to="/blog">Blog</nuxt-link>
+              <nuxt-link to="/blog/">Blog</nuxt-link>
           </div>
           <nuxt-link to="/contact" data-select="">Contact</nuxt-link>
       </div>
