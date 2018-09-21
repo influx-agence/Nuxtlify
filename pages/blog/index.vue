@@ -42,7 +42,7 @@
        },
        async asyncData ({ app }) {
            return {
-               posts: await app.$content('/').getAll()
+               posts: await app.$content('/posts').getAll()
            }
        }
     }
