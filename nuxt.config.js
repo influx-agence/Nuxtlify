@@ -1,7 +1,7 @@
 const webpack = require("webpack")
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
-  mode: "spa",
+  //mode: "spa",
   generate: {
     routes: [
       // You shouldn't need to include any content routes inside generate.routes
