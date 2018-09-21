@@ -15,9 +15,9 @@
       async asyncData({ app, route, params }) {
         
         const page = await app.$content("/posts").get(route.path);
-        const post = import("~/content/posts/" + page.title + ".json");
+        //const post = import("~/content/posts/" + page.title + ".json");
         return {
-          post,
+          //post,
           page
         };
       },
