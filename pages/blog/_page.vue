@@ -1,16 +1,35 @@
 <template>
     <div>
-        <h1>{{ post.title }}</h1>
-	   <div v-html="post.body" />
+        <h1>{{ page.title }}</h1>
+	   <div v-html="page.body" />
     </div>
 </template>
 
 <script>
     export default {
-      async asyncData ({ app, route }) {
+      data() {
         return {
-          post: await app.$content('/').get(route.path)
-        }
+          page: {}
+        };
+      },
+      async asyncData({ app, route }) {
+        const page = await app.$content("/posts").get(route.path);
+
+        return {
+          page
+        };
+      },
+      head() {
+        return {
+          title: `${this.page.title}`,
+          meta: [
+            {
+              hid: "description",
+              name: "description",
+              content: `${this.page.title}`
+            }
+          ]
+        };
       }
     }
 </script>
