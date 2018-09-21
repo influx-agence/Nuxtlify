@@ -2,22 +2,6 @@ const webpack = require("webpack")
 module.exports = {
   modules: ["nuxtent", "nuxt-netlify-cms"],
   mode: "spa",
-  nuxtent: {
-    content: {
-        page: "/_post",
-        permalink: ":year/:slug",
-        isPost: false,
-        generate: [
-          "get",
-          "getAll"
-        ]
-    }
-  },
-  api: function(isStatic) {
-    return {
-      browserBaseURL: isStatic ? 'https://influx-agence.netlify.com' : ''
-    }
-  },
   generate: {
     routes: [
       // You shouldn't need to include any content routes inside generate.routes
