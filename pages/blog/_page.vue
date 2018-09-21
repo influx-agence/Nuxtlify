@@ -13,7 +13,7 @@
         };
       },
       async asyncData({ app, route, params }) {
-        const post = import("~/content/blog/posts/" + params.slug + ".md");
+        const post = import("~/content/posts/" + params.slug + ".md");
         const page = await app.$content("/posts").get(route.path);
 
         return {
