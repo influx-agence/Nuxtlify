@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>{{ page.title }}</h1>
-	   <div v-html="page.body" />
+        <h1>{{ title }}</h1>
+	   
     </div>
 </template>
 
@@ -9,26 +9,23 @@
     export default {
       data() {
         return {
-          page: {}
+          page: {},
+          post: 0
         };
       },
-      async asyncData({ app, route, params }) {
-        
-        const page = await app.$content("/posts").get(route.path);
-        //const post = import("~/content/posts/" + page.title + ".json");
-        return {
-          //post,
-          page
-        };
-      },
+      async asyncData({ params }) {
+        let post = await import('~/content/posts/' + params.slug + '.json');
+        return post;
+      }
+
       head() {
         return {
-          title: `${this.page.title}`,
+          title: `${this.title}`,
           meta: [
             {
               hid: "description",
               name: "description",
-              content: `${this.page.title}`
+              content: `${this.title}`
             }
           ]
         };
