@@ -8,6 +8,11 @@
 <script>
     export default {
       async asyncData({ app, params }) {
+        const postPromise = process.BROWSER_BUILD
+         ? import('~/content/posts/' + params.slug + '.json')
+         : Promise.resolve(
+          require('~/content/posts/' + params.slug + '.json')
+        );
         let post = await import('~/content/posts/' + params.slug + '.json');
         return post;
       },
