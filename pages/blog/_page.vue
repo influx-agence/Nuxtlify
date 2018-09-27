@@ -15,7 +15,7 @@
       async asyncData({ app, params }) {
         let post = await import('~/content/posts/' + params.slug + '.json');
         return post;
-      }
+      },
 
       head() {
         return {
