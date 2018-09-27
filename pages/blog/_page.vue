@@ -9,23 +9,22 @@
     export default {
       data() {
         return {
-          page: {},
           post: 0
         };
       },
-      async asyncData({ params }) {
+      async asyncData({ app, params }) {
         let post = await import('~/content/posts/' + params.slug + '.json');
         return post;
       }
 
       head() {
         return {
-          title: `${this.title}`,
+          title: `${this.post.title}`,
           meta: [
             {
               hid: "description",
               name: "description",
-              content: `${this.title}`
+              content: `${this.post.title}`
             }
           ]
         };
