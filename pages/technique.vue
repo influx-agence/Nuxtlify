@@ -68,7 +68,7 @@
                       <hr>
                       <p>Vue.js / Nuxt.js</p>
                       <hr>
-                      <p>Directus</p>
+                      <p>Netlify</p>
                       <hr>
                       <p>MySQL</p>
                       <hr>
